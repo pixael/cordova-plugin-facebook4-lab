@@ -16,7 +16,7 @@ export class HomePage {
     test() {
         this.fb.login(['public_profile', 'user_friends', 'email'])
             .then((res: FacebookLoginResponse) => {
-                console.log('Logged into Facebook!', res);
+                console.log('Logged into Facebook!', JSON.stringify(res));
                 alert('Login OK');
             })
             .catch(e => {
