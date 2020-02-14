@@ -33,7 +33,7 @@ Once the application's bundle ready, open `./platforms/ios/MyApp.xcworkspace` in
 To compile the Android platform, run:
 
 ```
-ionic cordova build ios
+ionic cordova build android
 ```
 
 Once the application's bundle ready, open `./platforms/android` in Android Studio and run the application in the simulator.
