@@ -1,4 +1,4 @@
-## Cordova Plugin Facebook4 Lab
+# Cordova Plugin Facebook4 Lab
 
 A demo application for the [cordova-plugin-facebook4](https://github.com/jeduan/cordova-plugin-facebook4).
 
@@ -37,6 +37,10 @@ ionic cordova build ios
 ```
 
 Once the application's bundle ready, open `./platforms/android` in Android Studio and run the application in the simulator.
+
+## Documentation
+
+More documentation and information? Check out the [cordova-plugin-facebook4](https://github.com/jeduan/cordova-plugin-facebook4) plugin repo.
 
 ## License
 
