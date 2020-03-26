@@ -13,7 +13,7 @@ export class HomePage {
     }
 
 
-    test() {
+    testLogin() {
         this.fb.login(['public_profile', 'user_friends', 'email'])
             .then((res: FacebookLoginResponse) => {
                 console.log('Logged into Facebook!', JSON.stringify(res));
@@ -23,6 +23,22 @@ export class HomePage {
                 console.log('Error logging into Facebook', e);
                 alert('Login ERROR');
             });
+    }
+
+    testShare() {
+        const options = {
+            method: 'share',
+            href: 'https://pixael.com',
+            share_feedWeb: true,
+        };
+
+        this.fb.showDialog(options).then((result) => {
+            console.log('Shared with Facebook', JSON.stringify(result));
+            alert('Shared OK');
+        }).catch((e) => {
+            console.log(e);
+            alert('Share ERROR');
+        });
     }
 
 }
